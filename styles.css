@@ -1,0 +1,117 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 0.75rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f61;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff6f61;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar.sticky {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 0;
+}
+
+.hero-section {
+    background-image: url('high-angle-table-full-delicious-food-arrangement.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column; /* Add this to stack elements vertically */
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Add margin to separate the title and paragraph */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    padding: 0 1rem; /* Add padding for smaller screens */
+}
+
+.hero-section .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #ff4a3d;
+}
+
+.footer {
+    background-color: #333;
+    padding: 2rem 0;
+    margin-top: auto; 
+}
+
+.footer h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul.list-inline li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.footer ul.list-inline li:last-child {
+    margin-right: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff6f61; 
+}
